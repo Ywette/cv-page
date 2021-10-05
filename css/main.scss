@@ -149,6 +149,7 @@ section {
         display: flex;
         flex-direction: column;
         li {
+            flex-direction: column;
             width: 100%;
             // height: 100px;
             display: flex;
@@ -159,7 +160,7 @@ section {
             transition: all 0.25s ease;
             cursor: pointer;
             img {
-                width: 450px;
+                width: 100%;
                 height: 300px;
             }
             p {
@@ -203,16 +204,16 @@ section {
         bottom: 0;
         right: 0;
     }
-    .contact-wrapper {
-        z-index: 2;
-    }
     .contact-links {
         display: flex;
         // flex-direction: column;
         z-index: 3;
         margin-right: 25px;
+        justify-content: center;
+        align-items: center;
         h3 {
             padding-bottom: 50px;
+            display: block;
         }
         button {
             width: 50px;
@@ -320,12 +321,6 @@ button {
     padding: 8px 30px;
 }
 
-.contacts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 textarea {
     resize: none;
 }
@@ -355,6 +350,9 @@ textarea {
         ul {
             li {
                 flex-direction: column;
+                img {
+                    width: 100%;
+                }
             }
         }
     }
@@ -387,4 +385,15 @@ textarea {
     }
 }
 
-@media (max-width: 800px) {}
+@media (min-width: 1420px) {
+    .projects {
+        ul {
+            li {
+                display: flex;
+            }
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
