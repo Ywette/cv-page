@@ -382,3 +382,13 @@ textarea {
         align-items: center;
     }
 }
+
+@media (max-width: 800px) {
+    .projects {
+        ul {
+            li {
+                flex-direction: column;
+            }
+        }
+    }
+}

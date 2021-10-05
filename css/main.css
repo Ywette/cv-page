@@ -523,4 +523,13 @@ textarea {
             align-items: center;
   }
 }
+
+@media (max-width: 800px) {
+  .projects ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=main.css.map */
