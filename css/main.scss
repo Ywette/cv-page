@@ -336,7 +336,7 @@ textarea {
 //     margin: 2%;
 //     height: 100%;
 // }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     nav {
         ul {
             display: flex;
@@ -351,8 +351,12 @@ textarea {
             }
         }
     }
-    .project-content {
-        display: none;
+    .projects {
+        ul {
+            li {
+                flex-direction: column;
+            }
+        }
     }
     section {
         width: 100%;
@@ -383,12 +387,4 @@ textarea {
     }
 }
 
-@media (max-width: 800px) {
-    .projects {
-        ul {
-            li {
-                flex-direction: column;
-            }
-        }
-    }
-}
+@media (max-width: 800px) {}
